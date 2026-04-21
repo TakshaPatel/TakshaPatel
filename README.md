@@ -1,5 +1,5 @@
 # About Me:
-I’m currently working on building a ransomware simulator to understand encryption-based attack chains. I’m looking to collaborate on penetration testing, adversary simulation, and threat analysis projects. I’m looking for help with networking in the cybersecurity community and breaking into the industry as a student. I’m currently learning red teaming techniques, offensive security, and CTF challenges. Ask me about malware analysis, ethical hacking, or getting into cybersecurity as a high schooler
+I’m currently working on building a SAT Study app called Que to help teach students SAT Grammer through interactive Widgets. I’m looking to collaborate on penetration testing, adversary simulation, and threat analysis projects. I’m looking for help with networking in the cybersecurity community and breaking into the industry as a student. I’m currently learning red teaming techniques, offensive security, and CTF challenges. Ask me about malware analysis, ethical hacking, or getting into cybersecurity as a high schooler
 
 
 ## Socials:
