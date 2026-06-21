@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+    <title>console-home</title>
+</head>
+<style>
+body {
+    margin: 0;
+    background-color: #1f2228;
+    color: #ffffff;
+    font-family: 'JetBrains Mono', monospace;
+    padding: 20px;
+}
+
+.console-nav {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 24px;
+    color: #9EFF9E;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.console-nav span {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.console-nav span.active {
+    opacity: 1;
+    text-decoration: underline;
+}
+#terminal {
+  max-width: 900px;
+}
+
+.line {
+  opacity: 0;
+  margin: 4px 0;
+}
+
+pre {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.green { color: greenyellow; }
+.yellow { color: #ffd866; }
+
+a {
+  color: #9EFF9E;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#cursor {
+  color: #9EFF9E;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+</style>
+
+
+<body>
+<body>
+<div id="terminal">
+  <pre class="line green">[username@hostname]$ ./console-view.sh</pre>
+
+  <pre class="line ascii">
+     .----.
+     |C>_ |
+   __|____|__
+  |  ______--|
+  `-/.::::.\-'a
+   `--------'
+  </pre>
+
+  <pre class="line">Hello, I am Taksha!</pre>
+
+  <pre class="line yellow"> ────── PROFESSIONAL ────── </pre>
+  <pre class="line">Cyber Security Engineer | Software Engineer | Student | Tech Enthusiastic</pre>
+  <pre class="line">I'm a self-taught programmer and cybersecurity engineer. I love to build cool projects and learn new things. I focus on Cyber Security.</pre>
+
+  <pre class="line yellow"> ────── SPOTLIGHT PROJECTS (CLICKABLE) ────── </pre>
+
+  <div class="line">
+    <a href="https://github.com/TakshaPatel/browser/" target="_blank">PyQt Web Browser</a>
+  </div>
+  <div class="line">
+    <a href="https://github.com/TakshaPatel/RustyShell" target="_blank">RustyShell</a>
+  </div>
+  <div class="line">
+    <a href="https://github.com/TakshaPatel/FridayAI" target="_blank">AI Voice Assistant</a>
+  </div>
+  <div class="line">
+    <a href="https://github.com/TakshaPatel/SkillSnap" target="_blank">Skill Snap</a>
+  </div>
+
+  <pre class="line yellow"> ────── SKILLS ────── </pre>
+  <pre class="line">Python | HTML/CSS | C/C++ | Rust | Bash/Zsh | Offensive Cyber Security | Networking</pre>
+
+  <span id="cursor">█</span>
+</div>
+
+<div class="navbar">
+<div class="console-nav">
+    <span data-link="index.html">&lt;BACK&gt;</span>
+    <span data-link="console-home.html">&lt;HOME&gt;</span>
+    <span data-link="console-contact.html">&lt;CONTACT&gt;</span>
+    <span data-link="console-projects.html">&lt;PROJECTS&gt;</span>
+</div>
+</div>
+<p style="color:#888;">
+(type arrows to navigate, enter to select)
+</p>
+
+
+<script>
+const lines = document.querySelectorAll('.line');
+let delay = 0;
+
+lines.forEach(line => {
+  setTimeout(() => {
+    line.style.opacity = 1;
+  }, delay);
+  delay += 120;
+});
+</script>
+
+<script>
+const items = document.querySelectorAll('.console-nav span');
+
+let index = Number(sessionStorage.getItem('consoleNavIndex')) || 1;
+
+function update() {
+    items.forEach((el, i) =>
+        el.classList.toggle('active', i === index)
+    );
+}
+
+update();
+
+function saveIndex() {
+    sessionStorage.setItem('consoleNavIndex', index);
+}
+
+
+items.forEach((el, i) => {
+    el.addEventListener('click', () => {
+        index = i;
+        saveIndex();
+        window.location.href = el.dataset.link;
+    });
+});
+
+
+document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') {
+        index = (index + 1) % items.length;
+        saveIndex();
+        update();
+    }
+
+    if (e.key === 'ArrowLeft') {
+        index = (index - 1 + items.length) % items.length;
+        saveIndex();
+        update();
+    }
+
+    if (e.key === 'Enter') {
+        saveIndex();
+        window.location.href = items[index].dataset.link;
+    }
+});
+</script>
+
+
+</body>
+</html>
