@@ -5,6 +5,8 @@ I’m looking to collaborate on penetration testing, adversary simulation, and t
 
 I’m currently learning red teaming techniques, offensive security, and CTF challenges.
 
+I also like Aerospace & Defence
+
 **Ask me about** malware analysis, ethical hacking, or getting into cybersecurity as a high schooler
 
 
