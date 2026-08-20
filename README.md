@@ -1,13 +1,13 @@
 # About Me:
-I’m currently working on building a SAT Study app called Que to help teach students SAT Grammer through interactive Widgets.
+I’m currently working on building a SAT Study app called Que to help teach students SAT Grammer through interactive Widgets
 
-I’m looking to collaborate on penetration testing, adversary simulation, and threat analysis projects. I’m looking for help with networking in the cybersecurity community and breaking into the industry as a student. 
+I’m looking to collaborate on penetration testing, adversary simulation, and threat analysis projects. I’m looking for help with networking in the cybersecurity community and breaking into the industry as a student.
 
-I’m currently learning red teaming techniques, offensive security, and CTF challenges.
+I’m currently learning red teaming techniques, offensive security, and CTF challenges
 
 I also like Aerospace & Defence
 
-**Ask me about** malware analysis, ethical hacking, or getting into cybersecurity as a high schooler
+**Ask me about** malware analysis, ethical hacking, or getting into cybersecurity as a student
 
 
 ## Socials:
