@@ -1,6 +1,6 @@
 # About Me:
-I’m currently working on building a SAT Study app called Que to help teach students SAT Grammer through interactive Widgets
-
+Download Que Study from the app store, It is going to help you with SAT Grammar.
+  
 I’m looking to collaborate on penetration testing, adversary simulation, and threat analysis projects. I’m looking for help with networking in the cybersecurity community and breaking into the industry as a student.
 
 I’m currently learning red teaming techniques, offensive security, and CTF challenges
