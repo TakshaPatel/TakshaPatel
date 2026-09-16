@@ -1,5 +1,5 @@
 # About Me:
-Download Que Study from the app store, It is going to help you with SAT Grammar.
+Currently working on a guidance/predictive policing algorithm that can operate accurately under sensor noise.
   
 I’m looking to collaborate on penetration testing, adversary simulation, and threat analysis projects. I’m looking for help with networking in the cybersecurity community and breaking into the industry as a student.
 
