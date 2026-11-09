@@ -1,5 +1,5 @@
 # About Me:
-Currently working on LLM Security in prompt engineering
+Currently working on Minecraft security research
   
 I’m looking to collaborate on penetration testing, adversary simulation, and threat analysis projects. I’m looking for help with networking in the cybersecurity community and breaking into the industry as a student.
 
